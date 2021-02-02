@@ -1,0 +1,229 @@
+@prefix ui:             <http://www.w3.org/ns/ui#> .
+@prefix tui:            <http://www.bosch.com/ns/tui#> .
+@prefix vsso-tui:       <http://www.bosch.com/ns/vsso-tui#> .
+@prefix func:           <http://www.bosch.com/ns/function#> .
+@prefix vsso-template:  <http://vsso/ext/temp/main/0.1/>.
+
+vsso-tui:ObservableSignalIRI a tui:HiddenParameter ;
+    tui:parameterName "ObservableSignalIRI" ;
+    tui:parameterIndex "0" ;
+    tui:processingDirective [tui:source vsso-tui:ObservableSignalName; tui:function func:mintIRI] .
+
+vsso-tui:ObservableSignalName a tui:FreeParameter ;
+    tui:parameterName "ObservableSignalName" ;
+    tui:parameterIndex "1" ;
+    tui:validationFunction func:notEmpty ;
+    tui:parameterGuiFormType ui:TextField ;
+    tui:parameterGuiFormLabel "Provide a name for this observable signal" .
+
+vsso-tui:ObservableSignalDescription a tui:FreeParameter ;
+    tui:parameterName "ObservableSignalDescription" ;
+    tui:parameterIndex "2" ;
+    tui:validationFunction func:notEmpty ;
+    tui:parameterGuiFormType ui:TextField ;
+    tui:parameterGuiFormLabel "Provide a description for this observable signal" .
+
+vsso-tui:ObservableSignalUnit a tui:BoundParameter ;
+    tui:parameterName "ObservableSignalUnit" ;
+    tui:parameterIndex "3";
+    tui:validationFunction func:notNull ;
+    tui:parameterGuiFormType tui:SingleDropDown ;
+    tui:parameterGuiFormLabel "Select unit of measurement for this signal" ;
+    tui:parameterFormFillerQuery "SELECT * WHERE {?s rdfs:subClassOf qudt:Unit .}".
+
+vsso-tui:ObservableSignalSensor a tui:BoundParameter ;
+    tui:parameterName "ObservableSignalSensor" ;
+    tui:parameterIndex "4";
+    tui:validationFunction func:notNull ;
+    tui:parameterGuiFormType tui:SingleDropDown ;
+    tui:parameterGuiFormLabel "Select a sensor, which measures this signal" ;
+    tui:parameterFormFillerQuery "SELECT * WHERE {?s rdfs:subClassOf sosa:Sensor .}";
+    tui:dependsOn vsso-tui:ObservableSignalUnit .
+
+vsso-tui:ObservableSignal a tui:Template;
+    tui:templateName "Observable Signal";
+    tui:templateDescription "New observable signal.";
+    tui:parameters ( vsso-tui:ObservableSignalIRI vsso-tui:ObservableSignalName vsso-tui:ObservableSignalDescription vsso-tui:ObservableSignalUnit vsso-tui:ObservableSignalSensor ) ;
+    tui:ottrTemplate vsso-template:ObservableSignal;
+    tui:ottrTemplateInstance "vsso-template:ObservableSignal(ObservableSignalIRI, ObservableSignalName, ObservableSignalDescription, ObservableSignalUnit, ObservableSignalSensor).".
+
+vsso-tui:ActuableSignalIRI a tui:HiddenParameter ;
+    tui:parameterName "ActuableSignalIRI" ;
+    tui:parameterIndex "0" ;
+    tui:processingDirective [tui:source vsso-tui:ActuableSignalName; tui:function func:mintIRI] .
+
+vsso-tui:ActuableSignalName a tui:FreeParameter ;
+    tui:parameterName "ActuableSignalName" ;
+    tui:parameterIndex "1" ;
+    tui:validationFunction func:notEmpty ;
+    tui:parameterGuiFormType ui:TextField ;
+    tui:parameterGuiFormLabel "Provide a name for this actuable signal" .
+
+vsso-tui:ActuableSignalDescription a tui:FreeParameter ;
+    tui:parameterName "ActuableSignalDescription" ;
+    tui:parameterIndex "2" ;
+    tui:validationFunction func:notEmpty ;
+    tui:parameterGuiFormType ui:TextField ;
+    tui:parameterGuiFormLabel "Provide a description for this actuable signal" .
+
+vsso-tui:ActuableSignalUnit a tui:BoundParameter ;
+    tui:parameterName "ActuableSignalUnit" ;
+    tui:parameterIndex "3";
+    tui:validationFunction func:notNull ;
+    tui:parameterGuiFormType tui:SingleDropDown ;
+    tui:parameterGuiFormLabel "Select unit of measurement for this signal" ;
+    tui:parameterFormFillerQuery "SELECT * WHERE {?s rdfs:subClassOf qudt:Unit .}".
+
+vsso-tui:ActuableSignalActuator a tui:BoundParameter ;
+    tui:parameterName "ActuableSignalActuator" ;
+    tui:parameterIndex "4";
+    tui:validationFunction func:notNull ;
+    tui:parameterGuiFormType tui:SingleDropDown ;
+    tui:parameterGuiFormLabel "Select a actuator, which measures this signal" ;
+    tui:parameterFormFillerQuery "SELECT * WHERE {?s rdfs:subClassOf sosa:Actuator .}";
+    tui:dependsOn vsso-tui:ActuableSignalUnit .
+
+vsso-tui:ActuableSignal a tui:Template;
+    tui:templateName "Actuable Signal";
+    tui:templateDescription "New actuable signal.";
+    tui:parameters ( vsso-tui:ActuableSignalIRI vsso-tui:ActuableSignalName vsso-tui:ActuableSignalDescription vsso-tui:ActuableSignalUnit vsso-tui:ActuableSignalActuator ) ;
+    tui:ottrTemplate vsso-template:ActuableSignal;
+    tui:ottrTemplateInstance "vsso-template:ActuableSignal(ActuableSignalIRI, ActuableSignalName, ActuableSignalDescription, ActuableSignalUnit, ActuableSignalActuator).".
+	
+	vsso-tui:ObservableAndActuableSignalIRI a tui:HiddenParameter ;
+    tui:parameterName "ObservableAndActuableSignalIRI" ;
+    tui:parameterIndex "0" ;
+    tui:processingDirective [tui:source vsso-tui:ObservableAndActuableSignalName; tui:function func:mintIRI] .
+
+vsso-tui:ObservableAndActuableSignalName a tui:FreeParameter ;
+    tui:parameterName "ObservableAndActuableSignalName" ;
+    tui:parameterIndex "1" ;
+    tui:validationFunction func:notEmpty ;
+    tui:parameterGuiFormType ui:TextField ;
+    tui:parameterGuiFormLabel "Provide a name for this observable and actuable signal" .
+
+vsso-tui:ObservableAndActuableSignalDescription a tui:FreeParameter ;
+    tui:parameterName "ObservableAndActuableSignalDescription" ;
+    tui:parameterIndex "2" ;
+    tui:validationFunction func:notEmpty ;
+    tui:parameterGuiFormType ui:TextField ;
+    tui:parameterGuiFormLabel "Provide a description for this observable and actuable signal" .
+
+vsso-tui:ObservableAndActuableSignalUnit a tui:BoundParameter ;
+    tui:parameterName "ObservableAndActuableSignalUnit" ;
+    tui:parameterIndex "3";
+    tui:validationFunction func:notNull ;
+    tui:parameterGuiFormType tui:SingleDropDown ;
+    tui:parameterGuiFormLabel "Select unit of measurement for this signal" ;
+    tui:parameterFormFillerQuery "SELECT * WHERE {?s rdfs:subClassOf qudt:Unit .}".
+
+vsso-tui:ObservableAndActuableSignalSensor a tui:BoundParameter ;
+    tui:parameterName "ObservableAndActuableSignalSensor" ;
+    tui:parameterIndex "4";
+    tui:validationFunction func:notNull ;
+    tui:parameterGuiFormType tui:SingleDropDown ;
+    tui:parameterGuiFormLabel "Select a sensor, which measures this signal" ;
+    tui:parameterFormFillerQuery "SELECT * WHERE {?s rdfs:subClassOf sosa:Sensor .}";
+    tui:dependsOn vsso-tui:ObservableAndActuableSignalUnit .
+
+vsso-tui:ObservableAndActuableSignalActuator a tui:BoundParameter ;
+    tui:parameterName "ObservableAndActuableSignalActuator" ;
+    tui:parameterIndex "5";
+    tui:validationFunction func:notNull ;
+    tui:parameterGuiFormType tui:SingleDropDown ;
+    tui:parameterGuiFormLabel "Select a actuator, which measures this signal" ;
+    tui:parameterFormFillerQuery "SELECT * WHERE {?s rdfs:subClassOf sosa:Actuator .}";
+    tui:dependsOn vsso-tui:ObservableAndActuableSignalUnit .
+
+vsso-tui:ObservableAndActuableSignal a tui:Template;
+    tui:templateName "ObservableAndActuableSignal";
+    tui:templateDescription "New ObservableAndActuable signal.";
+    tui:parameters ( vsso-tui:ObservableAndActuableSignalIRI vsso-tui:ObservableAndActuableSignalName vsso-tui:ObservableAndActuableSignalDescription vsso-tui:ObservableAndActuableSignalUnit vsso-tui:ObservableAndActuableSignalSensor vsso-tui:ObservableAndActuableSignalActuator ) ;
+    tui:ottrTemplate vsso-template:ObservableAndActuableSignal;
+    tui:ottrTemplateInstance "vsso-template:ObservableAndActuableSignal(ObservableAndActuableSignalIRI, ObservableAndActuableSignalName, ObservableAndActuableSignalDescription, ObservableAndActuableSignalUnit, ObservableAndActuableSignalSensor, ObservableAndActuableSignalActuator).".
+	
+	vsso-tui:BranchIRI a tui:HiddenParameter ;
+    tui:parameterName "BranchIRI" ;
+    tui:parameterIndex "0" ;
+    tui:processingDirective [tui:source vsso-tui:BranchName; tui:function func:mintIRI] .
+
+vsso-tui:BranchName a tui:FreeParameter ;
+    tui:parameterName "BranchName" ;
+    tui:parameterIndex "1" ;
+    tui:validationFunction func:notEmpty ;
+    tui:parameterGuiFormType ui:TextField ;
+    tui:parameterGuiFormLabel "Provide a name for this branch of a car" .
+
+vsso-tui:BranchDescription a tui:FreeParameter ;
+    tui:parameterName "BranchDescription" ;
+    tui:parameterIndex "2" ;
+    tui:validationFunction func:notEmpty ;
+    tui:parameterGuiFormType ui:TextField ;
+    tui:parameterGuiFormLabel "Provide a description for this branch of a car" .
+
+vsso-tui:BranchPart a tui:BoundParameter ;
+    tui:parameterName "BranchPart" ;
+    tui:parameterIndex "3";
+    tui:validationFunction func:notNull ;
+    tui:parameterGuiFormType tui:SingleDropDown ;
+    tui:parameterGuiFormLabel "Select a car part" ;
+    tui:parameterFormFillerQuery "SELECT * WHERE {?s rdfs:subClassOf vsso:Branch .}".
+
+vsso-tui:Branch a tui:Template;
+    tui:templateName "Branch";
+    tui:templateDescription "New branch.";
+    tui:parameters ( vsso-tui:BranchIRI vsso-tui:BranchName vsso-tui:BranchDescription vsso-tui:BranchPart ) ;
+    tui:ottrTemplate vsso-template:Branch;
+    tui:ottrTemplateInstance "vsso-template:Branch(BranchIRI, BranchName, BranchDescription, BranchPart).".
+
+vsso-tui:SensorIRI a tui:HiddenParameter ;
+    tui:parameterName "SensorIRI" ;
+    tui:parameterIndex "0" ;
+    tui:processingDirective [tui:source vsso-tui:SensorName; tui:function func:mintIRI] .
+
+vsso-tui:SensorName a tui:FreeParameter ;
+    tui:parameterName "SensorName" ;
+    tui:parameterIndex "1" ;
+    tui:validationFunction func:notEmpty ;
+    tui:parameterGuiFormType ui:TextField ;
+    tui:parameterGuiFormLabel "Provide a name for this sensor" .
+
+vsso-tui:SensorDescription a tui:FreeParameter ;
+    tui:parameterName "SensorDescription" ;
+    tui:parameterIndex "2" ;
+    tui:validationFunction func:notEmpty ;
+    tui:parameterGuiFormType ui:TextField ;
+    tui:parameterGuiFormLabel "Provide a description for this sensor" .
+
+vsso-tui:Sensor a tui:Template;
+    tui:templateName "Sensor";
+    tui:templateDescription "New sensor.";
+    tui:parameters ( vsso-tui:SensorIRI vsso-tui:SensorName vsso-tui:SensorDescription ) ;
+    tui:ottrTemplate vsso-template:Sensor;
+    tui:ottrTemplateInstance "vsso-template:Sensor(SensorIRI SensorName SensorDescription)".
+
+vsso-tui:ActuatorIRI a tui:HiddenParameter ;
+    tui:parameterName "ActuatorIRI" ;
+    tui:parameterIndex "0" ;
+    tui:processingDirective [tui:source vsso-tui:ActuatorName; tui:function func:mintIRI] .
+
+vsso-tui:ActuatorName a tui:FreeParameter ;
+    tui:parameterName "ActuatorName" ;
+    tui:parameterIndex "1" ;
+    tui:validationFunction func:notEmpty ;
+    tui:parameterGuiFormType ui:TextField ;
+    tui:parameterGuiFormLabel "Provide a name for this actuator" .
+
+vsso-tui:ActuatorDescription a tui:FreeParameter ;
+    tui:parameterName "ActuatorDescription" ;
+    tui:parameterIndex "2" ;
+    tui:validationFunction func:notEmpty ;
+    tui:parameterGuiFormType ui:TextField ;
+    tui:parameterGuiFormLabel "Provide a description for this actuator" .
+
+vsso-tui:Actuator a tui:Template;
+    tui:templateName "Actuator";
+    tui:templateDescription "New actuator.";
+    tui:parameters ( vsso-tui:ActuatorIRI vsso-tui:ActuatorName vsso-tui:ActuatorDescription ) ;
+    tui:ottrTemplate vsso-template:Actuator;
+    tui:ottrTemplateInstance "vsso-template:Actuator(ActuatorIRI, ActuatorName, ActuatorDescription)." .
