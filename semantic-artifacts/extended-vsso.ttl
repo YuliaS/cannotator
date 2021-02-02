@@ -9787,7 +9787,7 @@ Though the diopter is based on the SI-metric system it has not been included in 
 <http://data.nasa.gov/qudt/owl/unit#SecondAngle> a <http://data.nasa.gov/qudt/owl/qudt#UsedWithSIUnit> , <http://data.nasa.gov/qudt/owl/qudt#AngleUnit> ;
    rdfs:label "Second Angle" .
    
-<http://www.bosch.com/ns/vsso-ext#IsLeftSeatBelted> a owl:Class ;
+<http://www.bosch.com/ns/vsso-ext#IsLeftSeatBelted> a rdfs:Class , owl:Class ;
    rdfs:label "IsLeftSeatBelted" ;
    rdfs:comment "Is the left belt engaged." ;
    rdfs:subClassOf <http://automotive.eurecom.fr/vsso#ObservableSignal> , _:bnode_58f22a2b_9f21_45b9_bf2e_a4e97c330b03_41385087 , _:bnode_58f22a2b_9f21_45b9_bf2e_a4e97c330b03_41385088 .
@@ -9798,7 +9798,7 @@ _:bnode_58f22a2b_9f21_45b9_bf2e_a4e97c330b03_41385088 a owl:Restriction ;
    owl:onProperty <http://www.w3.org/ns/sosa/isObservedBy> ;
    owl:allValuesFrom <http://automotive.eurecom.fr/vsso#BeltSensor> .
 
-<http://www.bosch.com/ns/vsso-ext#IsFrontRightDoorLocked> a owl:Class ;
+<http://www.bosch.com/ns/vsso-ext#IsFrontRightDoorLocked> a rdfs:Class , owl:Class ;
    rdfs:label "IsFrontRightDoorLocked" ;
    rdfs:comment "Is front right door locked or unlocked. True = Locked. False = Unlocked." ;
    rdfs:subClassOf <http://automotive.eurecom.fr/vsso#ObservableSignal> , _:bnode_58f22a2b_9f21_45b9_bf2e_a4e97c330b03_41385231 , _:bnode_58f22a2b_9f21_45b9_bf2e_a4e97c330b03_41385232 .
@@ -9809,7 +9809,7 @@ _:bnode_58f22a2b_9f21_45b9_bf2e_a4e97c330b03_41385232 a owl:Restriction ;
    owl:onProperty <http://www.w3.org/ns/sosa/isObservedBy> ;
    owl:allValuesFrom <http://automotive.eurecom.fr/vsso#DoorLock> .
 
-<http://www.bosch.com/ns/vsso-ext#IsFrontLeftDoorLocked> a owl:Class ;
+<http://www.bosch.com/ns/vsso-ext#IsFrontLeftDoorLocked> a rdfs:Class , owl:Class ;
    rdfs:label "IsFrontLeftDoorLocked" ;
    rdfs:comment "Is front left door locked or unlocked. True = Locked. False = Unlocked." ;
    rdfs:subClassOf <http://automotive.eurecom.fr/vsso#ObservableSignal> , _:bnode_58f22a2b_9f21_45b9_bf2e_a4e97c330b03_41385233 , _:bnode_58f22a2b_9f21_45b9_bf2e_a4e97c330b03_41385234 .
@@ -9820,7 +9820,7 @@ _:bnode_58f22a2b_9f21_45b9_bf2e_a4e97c330b03_41385234 a owl:Restriction ;
    owl:onProperty <http://qudt.org/schema/qudt/unit> ;
    owl:allValuesFrom <http://data.nasa.gov/qudt/owl/unit#Unitless> .
    
-<http://www.bosch.com/ns/vsso-ext#IsRearLeftDoorLocked> a owl:Class ;
+<http://www.bosch.com/ns/vsso-ext#IsRearLeftDoorLocked> a rdfs:Class , owl:Class ;
    rdfs:label "IsRearLeftDoorLocked" ;
    rdfs:comment "Is rear left door locked or unlocked. True = Locked. False = Unlocked." ;
    rdfs:subClassOf <http://automotive.eurecom.fr/vsso#ObservableSignal> , _:bnode_58f22a2b_9f21_45b9_bf2e_a4e97c330b03_41385235 , _:bnode_58f22a2b_9f21_45b9_bf2e_a4e97c330b03_41385236 .
@@ -9831,7 +9831,7 @@ _:bnode_58f22a2b_9f21_45b9_bf2e_a4e97c330b03_41385236 a owl:Restriction ;
    owl:onProperty <http://qudt.org/schema/qudt/unit> ;
    owl:allValuesFrom <http://data.nasa.gov/qudt/owl/unit#Unitless> .
    
-<http://www.bosch.com/ns/vsso-ext#IsRearRightDoorLocked> a owl:Class ;
+<http://www.bosch.com/ns/vsso-ext#IsRearRightDoorLocked> a rdfs:Class , owl:Class ;
    rdfs:label "IsRearRightDoorLocked" ;
    rdfs:comment "Is rear right door locked or unlocked. True = Locked. False = Unlocked." ;
    rdfs:subClassOf <http://automotive.eurecom.fr/vsso#ObservableSignal> , _:bnode_58f22a2b_9f21_45b9_bf2e_a4e97c330b03_41385237 , _:bnode_58f22a2b_9f21_45b9_bf2e_a4e97c330b03_41385238 .
@@ -9842,7 +9842,7 @@ _:bnode_58f22a2b_9f21_45b9_bf2e_a4e97c330b03_41385238 a owl:Restriction ;
    owl:onProperty <http://qudt.org/schema/qudt/unit> ;
    owl:allValuesFrom <http://data.nasa.gov/qudt/owl/unit#Unitless> .
    
-<http://www.bosch.com/ns/vsso-ext#IsRightSeatBelted> a owl:Class ;
+<http://www.bosch.com/ns/vsso-ext#IsRightSeatBelted> a rdfs:Class , owl:Class ;
    rdfs:label "IsRightSeatBelted" ;
    rdfs:comment "Is the right belt engaged." ;
    rdfs:subClassOf <http://automotive.eurecom.fr/vsso#ObservableSignal> , _:bnode_58f22a2b_9f21_45b9_bf2e_a4e97c330b03_41385239 , _:bnode_58f22a2b_9f21_45b9_bf2e_a4e97c330b03_41385240 .
@@ -9853,12 +9853,12 @@ _:bnode_58f22a2b_9f21_45b9_bf2e_a4e97c330b03_41385240 a owl:Restriction ;
    owl:onProperty <http://www.w3.org/ns/sosa/isObservedBy> ;
    owl:allValuesFrom <http://automotive.eurecom.fr/vsso#BeltSensor> .
    
-<http://www.bosch.com/ns/vsso-ext#HandsOffDetectionSensor> a owl:Class ;
+<http://www.bosch.com/ns/vsso-ext#HandsOffDetectionSensor> a rdfs:Class , owl:Class ;
    rdfs:label "HandsOffDetectionSensor" ;
    rdfs:comment "A sensor integrated into a steering wheel which monitors the hands of a driver." ;
    rdfs:subClassOf <http://www.w3.org/ns/sosa/Sensor> .
    
-<http://www.bosch.com/ns/vsso-ext#HandsOffSteeringWheelDetectionStatus> a owl:Class ;
+<http://www.bosch.com/ns/vsso-ext#HandsOffSteeringWheelDetectionStatus> a rdfs:Class , owl:Class ;
    rdfs:label "HandsOffSteeringWheelDetectionStatus" ;
    rdfs:comment "If hands are on the steering wheel (1-Hands On, 0-Hands Off)" ;
    rdfs:subClassOf <http://automotive.eurecom.fr/vsso#ObservableSignal> , _:bnode_58f22a2b_9f21_45b9_bf2e_a4e97c330b03_41385246 , _:bnode_58f22a2b_9f21_45b9_bf2e_a4e97c330b03_41385247 .
@@ -9869,7 +9869,7 @@ _:bnode_58f22a2b_9f21_45b9_bf2e_a4e97c330b03_41385247 a owl:Restriction ;
    owl:onProperty <http://www.w3.org/ns/sosa/isObservedBy> ;
    owl:allValuesFrom <http://www.bosch.com/ns/vsso-ext#HandsOffDetectionSensor> .
    
-<http://www.bosch.com/ns/vsso-ext#SteeringWheelRate> a owl:Class ;
+<http://www.bosch.com/ns/vsso-ext#SteeringWheelRate> a rdfs:Class , owl:Class ;
    rdfs:label "SteeringWheelRate" ;
    rdfs:comment "Steering wheel rate (SWR) is the change in steering wheel angle over time." ;
    rdfs:subClassOf <http://automotive.eurecom.fr/vsso#ObservableSignal> , _:bnode_58f22a2b_9f21_45b9_bf2e_a4e97c330b03_41385248 , _:bnode_58f22a2b_9f21_45b9_bf2e_a4e97c330b03_41385249 .
@@ -9880,7 +9880,7 @@ _:bnode_58f22a2b_9f21_45b9_bf2e_a4e97c330b03_41385249 a owl:Restriction ;
    owl:onProperty <http://qudt.org/schema/qudt/unit> ;
    owl:allValuesFrom <http://data.nasa.gov/qudt/owl/unit#DegreePerSecond> .
    
-<http://www.bosch.com/ns/vsso-ext#CruiseControlSystemState> a owl:Class ;
+<http://www.bosch.com/ns/vsso-ext#CruiseControlSystemState> a rdfs:Class , owl:Class ;
    rdfs:label "CruiseControlSystemState" ;
    rdfs:comment "Active Cruise Control state (4-Standstill, 3-Faulted, 1-Active, 0-Off)" ;
    rdfs:subClassOf <http://automotive.eurecom.fr/vsso#ObservableSignal> , <http://automotive.eurecom.fr/vsso#ActuableSignal> , _:bnode_58f22a2b_9f21_45b9_bf2e_a4e97c330b03_41385250 , _:bnode_58f22a2b_9f21_45b9_bf2e_a4e97c330b03_41385251 , _:bnode_58f22a2b_9f21_45b9_bf2e_a4e97c330b03_41385252 .
@@ -9894,7 +9894,7 @@ _:bnode_58f22a2b_9f21_45b9_bf2e_a4e97c330b03_41385252 a owl:Restriction ;
    owl:onProperty <http://www.w3.org/ns/sosa/isObservedBy> ;
    owl:allValuesFrom <http://automotive.eurecom.fr/vsso#CruiseControlSystem> .
 
-<http://www.bosch.com/ns/vsso-ext#IsBrakePedalPressed> a owl:Class ;
+<http://www.bosch.com/ns/vsso-ext#IsBrakePedalPressed> a rdfs:Class , owl:Class ;
    rdfs:label "IsBrakePedalPressed" ;
    rdfs:comment "Is brake pedal pressed." ;
    rdfs:subClassOf <http://automotive.eurecom.fr/vsso#ObservableSignal> , _:bnode_58f22a2b_9f21_45b9_bf2e_a4e97c330b03_41385253 , _:bnode_58f22a2b_9f21_45b9_bf2e_a4e97c330b03_41385254 .
@@ -9909,12 +9909,12 @@ _:bnode_58f22a2b_9f21_45b9_bf2e_a4e97c330b03_41385254 a owl:Restriction ;
    rdfs:label "GradianPerSecond" ;
    rdfs:comment "SI unit of angular velocity." .
    
-<http://www.bosch.com/ns/vsso-ext#BatteryCurrentSensor> a owl:Class ;
+<http://www.bosch.com/ns/vsso-ext#BatteryCurrentSensor> a rdfs:Class , owl:Class ;
    rdfs:label "BatteryCurrentSensor" ;
    rdfs:comment "A Current Sensor. Function to monitor the operation of the contactors and the amount of current leaving and entering the HV battery." ;
    rdfs:subClassOf <http://www.w3.org/ns/sosa/Sensor> .
    
-<http://www.bosch.com/ns/vsso-ext#HighVoltageBatteryCurrent> a owl:Class ;
+<http://www.bosch.com/ns/vsso-ext#HighVoltageBatteryCurrent> a rdfs:Class , owl:Class ;
    rdfs:label "HighVoltageBatteryCurrent" ;
    rdfs:comment "Hybrid Vehicle (HV) battery current." ;
    rdfs:subClassOf <http://automotive.eurecom.fr/vsso#ObservableSignal> , _:bnode_58f22a2b_9f21_45b9_bf2e_a4e97c330b03_41385257 , _:bnode_58f22a2b_9f21_45b9_bf2e_a4e97c330b03_41385258 .
@@ -9925,12 +9925,12 @@ _:bnode_58f22a2b_9f21_45b9_bf2e_a4e97c330b03_41385258 a owl:Restriction ;
    owl:onProperty <http://qudt.org/schema/qudt/unit> ;
    owl:allValuesFrom <http://data.nasa.gov/qudt/owl/unit#Ampere> .
    
-<http://www.bosch.com/ns/vsso-ext#BatteryVoltageSensor> a owl:Class ;
+<http://www.bosch.com/ns/vsso-ext#BatteryVoltageSensor> a rdfs:Class , owl:Class ;
    rdfs:label "BatteryVoltageSensor" ;
    rdfs:comment "A voltage sensor of a HV battery." ;
    rdfs:subClassOf <http://www.w3.org/ns/sosa/Sensor> .
    
-<http://www.bosch.com/ns/vsso-ext#HighVoltageBatteryVoltage> a owl:Class ;
+<http://www.bosch.com/ns/vsso-ext#HighVoltageBatteryVoltage> a rdfs:Class , owl:Class ;
    rdfs:label "HighVoltageBatteryVoltage" ;
    rdfs:comment "Hybrid Vehicle (HV) battery voltage." ;
    rdfs:subClassOf <http://automotive.eurecom.fr/vsso#ObservableSignal> , _:bnode_58f22a2b_9f21_45b9_bf2e_a4e97c330b03_41385259 , _:bnode_58f22a2b_9f21_45b9_bf2e_a4e97c330b03_41385260 .
@@ -9945,12 +9945,12 @@ _:bnode_58f22a2b_9f21_45b9_bf2e_a4e97c330b03_41385260 a owl:Restriction ;
    rdfs:label "Miliarcsecond" ;
    rdfs:comment "A unit of angle equal to one thousandth of an arcsecond (used especially in astronomy)." .
    
-<http://www.bosch.com/ns/vsso-ext#WheelSpeedSensor> a owl:Class ;
+<http://www.bosch.com/ns/vsso-ext#WheelSpeedSensor> a rdfs:Class , owl:Class ;
    rdfs:label "WheelSpeedSensor" ;
    rdfs:comment "A wheel speed sensor or vehicle speed sensor (VSS) is a type of tachometer. It is a sender device used for reading the speed of a vehicle's wheel rotation. It usually consists of a toothed ring and pickup." ;
    rdfs:subClassOf <http://www.w3.org/ns/sosa/Sensor> .
 
-<http://www.bosch.com/ns/vsso-ext#FrontLeftWheelSpeed> a owl:Class ;
+<http://www.bosch.com/ns/vsso-ext#FrontLeftWheelSpeed> a rdfs:Class , owl:Class ;
    rdfs:label "FrontLeftWheelSpeed" ;
    rdfs:comment "The speed of a vehicle's front left wheel rotation." ;
    rdfs:subClassOf <http://automotive.eurecom.fr/vsso#ObservableSignal> , _:bnode_58f22a2b_9f21_45b9_bf2e_a4e97c330b03_41385265 , _:bnode_58f22a2b_9f21_45b9_bf2e_a4e97c330b03_41385266 .
@@ -9961,7 +9961,7 @@ _:bnode_58f22a2b_9f21_45b9_bf2e_a4e97c330b03_41385266 a owl:Restriction ;
    owl:onProperty <http://qudt.org/schema/qudt/unit> ;
    owl:allValuesFrom <http://data.nasa.gov/qudt/owl/unit#KilometerPerHour> .
 
-<http://www.bosch.com/ns/vsso-ext#FrontRightWheelSpeed> a owl:Class ;
+<http://www.bosch.com/ns/vsso-ext#FrontRightWheelSpeed> a rdfs:Class , owl:Class ;
    rdfs:label "FrontRightWheelSpeed" ;
    rdfs:comment "The speed of a vehicle's front right wheel rotation." ;
    rdfs:subClassOf <http://automotive.eurecom.fr/vsso#ObservableSignal> , _:bnode_58f22a2b_9f21_45b9_bf2e_a4e97c330b03_41385267 , _:bnode_58f22a2b_9f21_45b9_bf2e_a4e97c330b03_41385268 .
@@ -9972,7 +9972,7 @@ _:bnode_58f22a2b_9f21_45b9_bf2e_a4e97c330b03_41385268 a owl:Restriction ;
    owl:onProperty <http://www.w3.org/ns/sosa/isObservedBy> ;
    owl:allValuesFrom <http://www.bosch.com/ns/vsso-ext#WheelSpeedSensor> .
    
-<http://www.bosch.com/ns/vsso-ext#RearLeftWheelSpeed> a owl:Class ;
+<http://www.bosch.com/ns/vsso-ext#RearLeftWheelSpeed> a rdfs:Class , owl:Class ;
    rdfs:label "RearLeftWheelSpeed" , "Rear Left Wheel Speed" ;
    rdfs:comment "The speed of a vehicle's rear left wheel rotation." ;
    rdfs:subClassOf <http://automotive.eurecom.fr/vsso#ObservableSignal> , _:bnode_58f22a2b_9f21_45b9_bf2e_a4e97c330b03_41385269 , _:bnode_58f22a2b_9f21_45b9_bf2e_a4e97c330b03_41385270 , _:bnode_58f22a2b_9f21_45b9_bf2e_a4e97c330b03_41385304 , _:bnode_58f22a2b_9f21_45b9_bf2e_a4e97c330b03_41385305 .
@@ -9983,7 +9983,7 @@ _:bnode_58f22a2b_9f21_45b9_bf2e_a4e97c330b03_41385270 a owl:Restriction ;
    owl:onProperty <http://qudt.org/schema/qudt/unit> ;
    owl:allValuesFrom <http://data.nasa.gov/qudt/owl/unit#KilometerPerHour> .
    
-<http://www.bosch.com/ns/vsso-ext#RearRightWheelSpeed> a owl:Class ;
+<http://www.bosch.com/ns/vsso-ext#RearRightWheelSpeed> a rdfs:Class , owl:Class ;
    rdfs:label "RearRightWheelSpeed" ;
    rdfs:comment "The speed of a vehicle's rear right wheel rotation." ;
    rdfs:subClassOf <http://automotive.eurecom.fr/vsso#ObservableSignal> , _:bnode_58f22a2b_9f21_45b9_bf2e_a4e97c330b03_41385271 , _:bnode_58f22a2b_9f21_45b9_bf2e_a4e97c330b03_41385272 .
@@ -9994,7 +9994,7 @@ _:bnode_58f22a2b_9f21_45b9_bf2e_a4e97c330b03_41385272 a owl:Restriction ;
    owl:onProperty <http://www.w3.org/ns/sosa/isObservedBy> ;
    owl:allValuesFrom <http://www.bosch.com/ns/vsso-ext#WheelSpeedSensor> .
    
-<http://www.bosch.com/ns/vsso-ext#IsActiveCruiseControlResumeButtonPressed> a owl:Class ;
+<http://www.bosch.com/ns/vsso-ext#IsActiveCruiseControlResumeButtonPressed> a rdfs:Class , owl:Class ;
    rdfs:label "IsActiveCruiseControlResumeButtonPressed" ;
    rdfs:comment "Signal indicating whether the the ACC resume button is pressed or depressed." ;
    rdfs:subClassOf <http://automotive.eurecom.fr/vsso#ObservableSignal> , <http://automotive.eurecom.fr/vsso#ActuableSignal> , _:bnode_58f22a2b_9f21_45b9_bf2e_a4e97c330b03_41385273 , _:bnode_58f22a2b_9f21_45b9_bf2e_a4e97c330b03_41385274 , _:bnode_58f22a2b_9f21_45b9_bf2e_a4e97c330b03_41385275 .
@@ -10008,7 +10008,7 @@ _:bnode_58f22a2b_9f21_45b9_bf2e_a4e97c330b03_41385275 a owl:Restriction ;
    owl:onProperty <http://qudt.org/schema/qudt/unit> ;
    owl:allValuesFrom <http://data.nasa.gov/qudt/owl/unit#Unitless> .
    
-<http://www.bosch.com/ns/vsso-ext#ActiveCruiseControlGapLevel> a owl:Class ;
+<http://www.bosch.com/ns/vsso-ext#ActiveCruiseControlGapLevel> a rdfs:Class , owl:Class ;
    rdfs:label "Active Cruise Control Gap Level" ;
    rdfs:comment "A distance to the vehicle ahead (3-Far 2-Med 1-Near 0-Inactive)" ;
    rdfs:subClassOf <http://automotive.eurecom.fr/vsso#ObservableSignal> , _:bnode_58f22a2b_9f21_45b9_bf2e_a4e97c330b03_41385276 , _:bnode_58f22a2b_9f21_45b9_bf2e_a4e97c330b03_41385277 .
@@ -10019,7 +10019,7 @@ _:bnode_58f22a2b_9f21_45b9_bf2e_a4e97c330b03_41385277 a owl:Restriction ;
    owl:onProperty <http://www.w3.org/ns/sosa/isObservedBy> ;
    owl:allValuesFrom <http://automotive.eurecom.fr/vsso#CruiseControlSystem> .
    
-<http://www.bosch.com/ns/vsso-ext#ActiveCruiseControlLeadCar> a owl:Class ;
+<http://www.bosch.com/ns/vsso-ext#ActiveCruiseControlLeadCar> a rdfs:Class , owl:Class ;
    rdfs:label "Active Cruise Control Lead Car" ;
    rdfs:comment "A signal which indicates whether the car in front of the driver (lead vehicle) is present." ;
    rdfs:subClassOf <http://automotive.eurecom.fr/vsso#ObservableSignal> , _:bnode_58f22a2b_9f21_45b9_bf2e_a4e97c330b03_41385278 , _:bnode_58f22a2b_9f21_45b9_bf2e_a4e97c330b03_41385279 .
@@ -10030,7 +10030,7 @@ _:bnode_58f22a2b_9f21_45b9_bf2e_a4e97c330b03_41385279 a owl:Restriction ;
    owl:onProperty <http://www.w3.org/ns/sosa/isObservedBy> ;
    owl:allValuesFrom <http://automotive.eurecom.fr/vsso#CruiseControlSystem> .
    
-<http://www.bosch.com/ns/vsso-ext#ForwardCollisionWarningAlert> a owl:Class ;
+<http://www.bosch.com/ns/vsso-ext#ForwardCollisionWarningAlert> a rdfs:Class , owl:Class ;
    rdfs:label "Forward Collision Warning Alert" ;
    rdfs:comment "Forward-collision warning (FCW) alert, issued if a driver gets too close to a car in front." ;
    rdfs:subClassOf <http://automotive.eurecom.fr/vsso#ObservableSignal> , _:bnode_58f22a2b_9f21_45b9_bf2e_a4e97c330b03_41385280 , _:bnode_58f22a2b_9f21_45b9_bf2e_a4e97c330b03_41385281 .
@@ -10041,12 +10041,12 @@ _:bnode_58f22a2b_9f21_45b9_bf2e_a4e97c330b03_41385281 a owl:Restriction ;
    owl:onProperty <http://www.w3.org/ns/sosa/isObservedBy> ;
    owl:allValuesFrom <http://automotive.eurecom.fr/vsso#CruiseControlSystem> .
    
-<http://www.bosch.com/ns/vsso-ext#DiagnosticSystem> a owl:Class ;
+<http://www.bosch.com/ns/vsso-ext#DiagnosticSystem> a rdfs:Class , owl:Class ;
    rdfs:label "DiagnosticSystem" ;
    rdfs:comment "Onboard diagnostic system." ;
    rdfs:subClassOf <http://www.w3.org/ns/sosa/Sensor> .
 
-<http://www.bosch.com/ns/vsso-ext#IsDiagnosticTroubleCodeTriggered> a owl:Class ;
+<http://www.bosch.com/ns/vsso-ext#IsDiagnosticTroubleCodeTriggered> a rdfs:Class , owl:Class ;
    rdfs:label "IsDiagnosticTroubleCodeTriggered" ;
    rdfs:comment "Is Diagnostic Trouble Code (DTC) triggered." ;
    rdfs:subClassOf <http://automotive.eurecom.fr/vsso#ObservableSignal> , _:bnode_58f22a2b_9f21_45b9_bf2e_a4e97c330b03_41385286 , _:bnode_58f22a2b_9f21_45b9_bf2e_a4e97c330b03_41385287 .
@@ -10057,7 +10057,7 @@ _:bnode_58f22a2b_9f21_45b9_bf2e_a4e97c330b03_41385287 a owl:Restriction ;
    owl:onProperty <http://qudt.org/schema/qudt/unit> ;
    owl:allValuesFrom <http://data.nasa.gov/qudt/owl/unit#Unitless> .
    
-<http://www.bosch.com/ns/vsso-ext#DiagnosticTroubleCodeSource> a owl:Class ;
+<http://www.bosch.com/ns/vsso-ext#DiagnosticTroubleCodeSource> a rdfs:Class , owl:Class ;
    rdfs:label "DiagnosticTroubleCodeSource" ;
    rdfs:comment "A source of a Diagnostic Trouble Code (DTC)." ;
    rdfs:subClassOf <http://automotive.eurecom.fr/vsso#ObservableSignal> , _:bnode_58f22a2b_9f21_45b9_bf2e_a4e97c330b03_41385288 , _:bnode_58f22a2b_9f21_45b9_bf2e_a4e97c330b03_41385289 .
@@ -10069,7 +10069,7 @@ _:bnode_58f22a2b_9f21_45b9_bf2e_a4e97c330b03_41385289 a owl:Restriction ;
    owl:allValuesFrom <http://www.bosch.com/ns/vsso-ext#DiagnosticSystem> .
   
    
-<http://www.bosch.com/ns/vsso-ext#DiagnosticTroubleCodeNumber> a owl:Class ;
+<http://www.bosch.com/ns/vsso-ext#DiagnosticTroubleCodeNumber> a rdfs:Class , owl:Class ;
    rdfs:label "DiagnosticTroubleCodeNumber" ;
    rdfs:comment "A number of a Diagnostic Trouble Code (DTC)." ;
    rdfs:subClassOf <http://automotive.eurecom.fr/vsso#ObservableSignal> , _:bnode_58f22a2b_9f21_45b9_bf2e_a4e97c330b03_41385290 , _:bnode_58f22a2b_9f21_45b9_bf2e_a4e97c330b03_41385291 .
@@ -10080,7 +10080,7 @@ _:bnode_58f22a2b_9f21_45b9_bf2e_a4e97c330b03_41385291 a owl:Restriction ;
    owl:onProperty <http://qudt.org/schema/qudt/unit> ;
    owl:allValuesFrom <http://data.nasa.gov/qudt/owl/unit#Unitless> .
    
-<http://www.bosch.com/ns/vsso-ext#DiagnosticTroubleCodeFailureType> a owl:Class ;
+<http://www.bosch.com/ns/vsso-ext#DiagnosticTroubleCodeFailureType> a rdfs:Class , owl:Class ;
    rdfs:label "DiagnosticTroubleCodeFailureType" ;
    rdfs:comment "A Diagnostic Trouble Code (DTC) failure type information." ;
    rdfs:subClassOf <http://automotive.eurecom.fr/vsso#ObservableSignal> , _:bnode_58f22a2b_9f21_45b9_bf2e_a4e97c330b03_41385292 , _:bnode_58f22a2b_9f21_45b9_bf2e_a4e97c330b03_41385293 .
@@ -10091,7 +10091,7 @@ _:bnode_58f22a2b_9f21_45b9_bf2e_a4e97c330b03_41385293 a owl:Restriction ;
    owl:onProperty <http://qudt.org/schema/qudt/unit> ;
    owl:allValuesFrom <http://data.nasa.gov/qudt/owl/unit#Unitless> .
    
-<http://www.bosch.com/ns/vsso-ext#DiagnosticTroubleCodeInformationCurrentStatus> a owl:Class ;
+<http://www.bosch.com/ns/vsso-ext#DiagnosticTroubleCodeInformationCurrentStatus> a rdfs:Class , owl:Class ;
    rdfs:label "DiagnosticTroubleCodeInformationCurrentStatus" ;
    rdfs:comment "A status of the Diagnostic Trouble Code (DTC) Information." ;
    rdfs:subClassOf <http://automotive.eurecom.fr/vsso#ObservableSignal> , _:bnode_58f22a2b_9f21_45b9_bf2e_a4e97c330b03_41385294 , _:bnode_58f22a2b_9f21_45b9_bf2e_a4e97c330b03_41385295 .
@@ -10102,7 +10102,7 @@ _:bnode_58f22a2b_9f21_45b9_bf2e_a4e97c330b03_41385295 a owl:Restriction ;
    owl:onProperty <http://www.w3.org/ns/sosa/isObservedBy> ;
    owl:allValuesFrom <http://www.bosch.com/ns/vsso-ext#DiagnosticSystem> .
    
-<http://www.bosch.com/ns/vsso-ext#DiagnosticTroubleCodeFaultType> a owl:Class ;
+<http://www.bosch.com/ns/vsso-ext#DiagnosticTroubleCodeFaultType> a rdfs:Class , owl:Class ;
    rdfs:label "Diagnostic Trouble Code Fault Type" ;
    rdfs:comment "A fault type (A, B, C, or D) indicated by a Diagnostic Trouble Code (DTC)." ;
    rdfs:subClassOf <http://automotive.eurecom.fr/vsso#ObservableSignal> , _:bnode_58f22a2b_9f21_45b9_bf2e_a4e97c330b03_41385296 , _:bnode_58f22a2b_9f21_45b9_bf2e_a4e97c330b03_41385297 .
@@ -10113,12 +10113,12 @@ _:bnode_58f22a2b_9f21_45b9_bf2e_a4e97c330b03_41385297 a owl:Restriction ;
    owl:onProperty <http://www.w3.org/ns/sosa/isObservedBy> ;
    owl:allValuesFrom <http://www.bosch.com/ns/vsso-ext#DiagnosticSystem> .
 
-<http://www.bosch.com/ns/vsso-ext#WheelMotionSensor> a owl:Class ;
+<http://www.bosch.com/ns/vsso-ext#WheelMotionSensor> a rdfs:Class , owl:Class ;
    rdfs:label "WheelMotionSensor" ;
    rdfs:comment "A wheel movement detection sensor." ;
    rdfs:subClassOf <http://www.w3.org/ns/sosa/Sensor> .
    
-<http://www.bosch.com/ns/vsso-ext#IsFrontLeftWheelMoving> a owl:Class ;
+<http://www.bosch.com/ns/vsso-ext#IsFrontLeftWheelMoving> a rdfs:Class , owl:Class ;
    rdfs:label "IsFront LeftWheelMoving" ;
    rdfs:comment "Is front left wheel moving." ;
    rdfs:subClassOf <http://automotive.eurecom.fr/vsso#ObservableSignal> , _:bnode_58f22a2b_9f21_45b9_bf2e_a4e97c330b03_41385298 , _:bnode_58f22a2b_9f21_45b9_bf2e_a4e97c330b03_41385299 .
@@ -10129,7 +10129,7 @@ _:bnode_58f22a2b_9f21_45b9_bf2e_a4e97c330b03_41385299 a owl:Restriction ;
    owl:onProperty <http://qudt.org/schema/qudt/unit> ;
    owl:allValuesFrom <http://data.nasa.gov/qudt/owl/unit#Unitless> .
    
-<http://www.bosch.com/ns/vsso-ext#IsFrontRightWheelMoving> a owl:Class ;
+<http://www.bosch.com/ns/vsso-ext#IsFrontRightWheelMoving> a rdfs:Class , owl:Class ;
    rdfs:label "Is Front Right Wheel Moving" ;
    rdfs:comment "Is front right wheel moving." ;
    rdfs:subClassOf <http://automotive.eurecom.fr/vsso#ObservableSignal> , _:bnode_58f22a2b_9f21_45b9_bf2e_a4e97c330b03_41385300 , _:bnode_58f22a2b_9f21_45b9_bf2e_a4e97c330b03_41385301 .
@@ -10140,7 +10140,7 @@ _:bnode_58f22a2b_9f21_45b9_bf2e_a4e97c330b03_41385301 a owl:Restriction ;
    owl:onProperty <http://qudt.org/schema/qudt/unit> ;
    owl:allValuesFrom <http://data.nasa.gov/qudt/owl/unit#Unitless> .
    
-<http://www.bosch.com/ns/vsso-ext#IsRearLeftWheelMoving> a owl:Class ;
+<http://www.bosch.com/ns/vsso-ext#IsRearLeftWheelMoving> a rdfs:Class , owl:Class ;
    rdfs:label "Is Rear Left Wheel Moving" ;
    rdfs:comment "Is rear left wheel moving." ;
    rdfs:subClassOf <http://automotive.eurecom.fr/vsso#ObservableSignal> , _:bnode_58f22a2b_9f21_45b9_bf2e_a4e97c330b03_41385302 , _:bnode_58f22a2b_9f21_45b9_bf2e_a4e97c330b03_41385303 .
@@ -10151,7 +10151,7 @@ _:bnode_58f22a2b_9f21_45b9_bf2e_a4e97c330b03_41385303 a owl:Restriction ;
    owl:onProperty <http://qudt.org/schema/qudt/unit> ;
    owl:allValuesFrom <http://data.nasa.gov/qudt/owl/unit#Unitless> .
    
-<http://www.bosch.com/ns/vsso-ext#IsRearRightWheelMoving> a owl:Class ;
+<http://www.bosch.com/ns/vsso-ext#IsRearRightWheelMoving> a rdfs:Class , owl:Class ;
    rdfs:label "IsRearRightWheelMoving" ;
    rdfs:comment "Is rear right wheel moving." ;
    rdfs:subClassOf <http://automotive.eurecom.fr/vsso#ObservableSignal> , _:bnode_58f22a2b_9f21_45b9_bf2e_a4e97c330b03_41385306 , _:bnode_58f22a2b_9f21_45b9_bf2e_a4e97c330b03_41385307 .
@@ -10162,7 +10162,7 @@ _:bnode_58f22a2b_9f21_45b9_bf2e_a4e97c330b03_41385307 a owl:Restriction ;
    owl:onProperty <http://qudt.org/schema/qudt/unit> ;
    owl:allValuesFrom <http://data.nasa.gov/qudt/owl/unit#Unitless> .
    
-<http://www.bosch.com/ns/vsso-ext#IsRearRightDoorClosed> a owl:Class ;
+<http://www.bosch.com/ns/vsso-ext#IsRearRightDoorClosed> a rdfs:Class , owl:Class ;
    rdfs:label "IsRearRightDoorClosed" ;
    rdfs:comment "Is rear right door closed." ;
    rdfs:subClassOf <http://automotive.eurecom.fr/vsso#ObservableSignal> , <http://automotive.eurecom.fr/vsso#ActuableSignal> , _:bnode_58f22a2b_9f21_45b9_bf2e_a4e97c330b03_41385308 , _:bnode_58f22a2b_9f21_45b9_bf2e_a4e97c330b03_41385309 , _:bnode_58f22a2b_9f21_45b9_bf2e_a4e97c330b03_41385310 .
@@ -10176,7 +10176,7 @@ _:bnode_58f22a2b_9f21_45b9_bf2e_a4e97c330b03_41385310 a owl:Restriction ;
    owl:onProperty <http://www.w3.org/ns/sosa/isObservedBy> ;
    owl:allValuesFrom <http://automotive.eurecom.fr/vsso#DoorContactSensor> .
    
-<http://www.bosch.com/ns/vsso-ext#IsRearLeftDoorOpen> a owl:Class ;
+<http://www.bosch.com/ns/vsso-ext#IsRearLeftDoorOpen> a rdfs:Class , owl:Class ;
    rdfs:label "IsRearLeftDoorOpen" ;
    rdfs:comment "Is rear left door open." ;
    rdfs:subClassOf <http://automotive.eurecom.fr/vsso#ObservableSignal> , <http://automotive.eurecom.fr/vsso#ActuableSignal> , _:bnode_58f22a2b_9f21_45b9_bf2e_a4e97c330b03_41385311 , _:bnode_58f22a2b_9f21_45b9_bf2e_a4e97c330b03_41385312 , _:bnode_58f22a2b_9f21_45b9_bf2e_a4e97c330b03_41385313 .
@@ -10190,7 +10190,7 @@ _:bnode_58f22a2b_9f21_45b9_bf2e_a4e97c330b03_41385313 a owl:Restriction ;
    owl:onProperty <http://www.w3.org/ns/sosa/isActuatedBy> ;
    owl:allValuesFrom <http://automotive.eurecom.fr/vsso#DoorContactActuator> .
    
-<http://www.bosch.com/ns/vsso-ext#IsRearRightDoorOpen> a owl:Class ;
+<http://www.bosch.com/ns/vsso-ext#IsRearRightDoorOpen> a rdfs:Class , owl:Class ;
    rdfs:label "IsRearRightDoorOpen" ;
    rdfs:comment "Is rear right door open." ;
    rdfs:subClassOf <http://automotive.eurecom.fr/vsso#ObservableSignal> , <http://automotive.eurecom.fr/vsso#ActuableSignal> , _:bnode_58f22a2b_9f21_45b9_bf2e_a4e97c330b03_41385314 , _:bnode_58f22a2b_9f21_45b9_bf2e_a4e97c330b03_41385315 , _:bnode_58f22a2b_9f21_45b9_bf2e_a4e97c330b03_41385316 .
@@ -10204,7 +10204,7 @@ _:bnode_58f22a2b_9f21_45b9_bf2e_a4e97c330b03_41385316 a owl:Restriction ;
    owl:onProperty <http://www.w3.org/ns/sosa/isActuatedBy> ;
    owl:allValuesFrom <http://automotive.eurecom.fr/vsso#DoorContactActuator> .
    
-<http://www.bosch.com/ns/vsso-ext#IsFrontRightDoorOpen> a owl:Class ;
+<http://www.bosch.com/ns/vsso-ext#IsFrontRightDoorOpen> a rdfs:Class , owl:Class ;
    rdfs:label "IsFrontRightDoorOpen" ;
    rdfs:comment "Is front right door open." ;
    rdfs:subClassOf <http://automotive.eurecom.fr/vsso#ObservableSignal> , <http://automotive.eurecom.fr/vsso#ActuableSignal> , _:bnode_58f22a2b_9f21_45b9_bf2e_a4e97c330b03_41385317 , _:bnode_58f22a2b_9f21_45b9_bf2e_a4e97c330b03_41385318 , _:bnode_58f22a2b_9f21_45b9_bf2e_a4e97c330b03_41385319 .
@@ -10218,7 +10218,7 @@ _:bnode_58f22a2b_9f21_45b9_bf2e_a4e97c330b03_41385319 a owl:Restriction ;
    owl:onProperty <http://qudt.org/schema/qudt/unit> ;
    owl:allValuesFrom <http://data.nasa.gov/qudt/owl/unit#Unitless> .
       
-<http://www.bosch.com/ns/vsso-ext#IsRearLeftDoorClosed> a owl:Class ;
+<http://www.bosch.com/ns/vsso-ext#IsRearLeftDoorClosed> a rdfs:Class , owl:Class ;
    rdfs:label "IsRearLeftDoorClosed" ;
    rdfs:comment "Is rear left door closed." ;
    rdfs:subClassOf <http://automotive.eurecom.fr/vsso#ObservableSignal> , <http://automotive.eurecom.fr/vsso#ActuableSignal> , _:bnode_58f22a2b_9f21_45b9_bf2e_a4e97c330b03_41385320 , _:bnode_58f22a2b_9f21_45b9_bf2e_a4e97c330b03_41385321 , _:bnode_58f22a2b_9f21_45b9_bf2e_a4e97c330b03_41385322 .
@@ -10232,7 +10232,7 @@ _:bnode_58f22a2b_9f21_45b9_bf2e_a4e97c330b03_41385322 a owl:Restriction ;
    owl:onProperty <http://qudt.org/schema/qudt/unit> ;
    owl:allValuesFrom <http://data.nasa.gov/qudt/owl/unit#Unitless> .
    
-<http://www.bosch.com/ns/vsso-ext#IsFrontRightDoorClosed> a owl:Class ;
+<http://www.bosch.com/ns/vsso-ext#IsFrontRightDoorClosed> a rdfs:Class , owl:Class ;
    rdfs:label "IsFrontRightDoorClosed" ;
    rdfs:comment "Is front right door closed." ;
    rdfs:subClassOf <http://automotive.eurecom.fr/vsso#ObservableSignal> , <http://automotive.eurecom.fr/vsso#ActuableSignal> , _:bnode_58f22a2b_9f21_45b9_bf2e_a4e97c330b03_41385323 , _:bnode_58f22a2b_9f21_45b9_bf2e_a4e97c330b03_41385324 , _:bnode_58f22a2b_9f21_45b9_bf2e_a4e97c330b03_41385325 .
@@ -10246,7 +10246,7 @@ _:bnode_58f22a2b_9f21_45b9_bf2e_a4e97c330b03_41385325 a owl:Restriction ;
    owl:onProperty <http://qudt.org/schema/qudt/unit> ;
    owl:allValuesFrom <http://data.nasa.gov/qudt/owl/unit#Unitless> .
    
-<http://www.bosch.com/ns/vsso-ext#IsFrontLeftDoorOpen> a owl:Class ;
+<http://www.bosch.com/ns/vsso-ext#IsFrontLeftDoorOpen> a rdfs:Class , owl:Class ;
    rdfs:label "IsFrontLeftDoorOpen" ;
    rdfs:comment "Is front left door open." ;
    rdfs:subClassOf <http://automotive.eurecom.fr/vsso#ObservableSignal> , <http://automotive.eurecom.fr/vsso#ActuableSignal> , _:bnode_58f22a2b_9f21_45b9_bf2e_a4e97c330b03_41385326 , _:bnode_58f22a2b_9f21_45b9_bf2e_a4e97c330b03_41385327 , _:bnode_58f22a2b_9f21_45b9_bf2e_a4e97c330b03_41385328 .
@@ -10260,7 +10260,7 @@ _:bnode_58f22a2b_9f21_45b9_bf2e_a4e97c330b03_41385328 a owl:Restriction ;
    owl:onProperty <http://www.w3.org/ns/sosa/isActuatedBy> ;
    owl:allValuesFrom <http://automotive.eurecom.fr/vsso#DoorContactActuator> .
    
-<http://www.bosch.com/ns/vsso-ext#IsFrontLeftDoorClosed> a owl:Class ;
+<http://www.bosch.com/ns/vsso-ext#IsFrontLeftDoorClosed> a rdfs:Class , owl:Class ;
    rdfs:label "IsFrontLeftDoorClosed" ;
    rdfs:comment "Is front left door closed." ;
    rdfs:subClassOf <http://automotive.eurecom.fr/vsso#ObservableSignal> , <http://automotive.eurecom.fr/vsso#ActuableSignal> , _:bnode_58f22a2b_9f21_45b9_bf2e_a4e97c330b03_41385329 , _:bnode_58f22a2b_9f21_45b9_bf2e_a4e97c330b03_41385330 , _:bnode_58f22a2b_9f21_45b9_bf2e_a4e97c330b03_41385331 .
@@ -10274,7 +10274,7 @@ _:bnode_58f22a2b_9f21_45b9_bf2e_a4e97c330b03_41385331 a owl:Restriction ;
    owl:onProperty <http://qudt.org/schema/qudt/unit> ;
    owl:allValuesFrom <http://data.nasa.gov/qudt/owl/unit#Unitless> .
    
-<http://www.bosch.com/ns/vsso-ext#IsDriverSeatBeltLamp> a owl:Class ;
+<http://www.bosch.com/ns/vsso-ext#IsDriverSeatBeltLamp> a rdfs:Class , owl:Class ;
    rdfs:label "IsDriverSeatBeltLamp" ;
    rdfs:comment "Is driver seatbelt lamp on." ;
    rdfs:subClassOf <http://automotive.eurecom.fr/vsso#ObservableSignal> , _:bnode_58f22a2b_9f21_45b9_bf2e_a4e97c330b03_41385332 , _:bnode_58f22a2b_9f21_45b9_bf2e_a4e97c330b03_41385333 .
@@ -10285,7 +10285,7 @@ _:bnode_58f22a2b_9f21_45b9_bf2e_a4e97c330b03_41385333 a owl:Restriction ;
    owl:onProperty <http://www.w3.org/ns/sosa/isObservedBy> ;
    owl:allValuesFrom <http://automotive.eurecom.fr/vsso#LightSensor> .
 
-<http://www.bosch.com/ns/vsso-ext#IsPassengerAirbagOn> a owl:Class ;
+<http://www.bosch.com/ns/vsso-ext#IsPassengerAirbagOn> a rdfs:Class , owl:Class ;
    rdfs:label "IsPassengerAirbagOn" ;
    rdfs:comment "Is passenger airbag enabled." ;
    rdfs:subClassOf <http://automotive.eurecom.fr/vsso#ObservableSignal> , _:bnode_58f22a2b_9f21_45b9_bf2e_a4e97c330b03_41385334 , _:bnode_58f22a2b_9f21_45b9_bf2e_a4e97c330b03_41385335 .
@@ -10296,7 +10296,7 @@ _:bnode_58f22a2b_9f21_45b9_bf2e_a4e97c330b03_41385335 a owl:Restriction ;
    owl:onProperty <http://qudt.org/schema/qudt/unit> ;
    owl:allValuesFrom <http://data.nasa.gov/qudt/owl/unit#Unitless> .
 
-<http://www.bosch.com/ns/vsso-ext#IsPassengerAirbagOff> a owl:Class ;
+<http://www.bosch.com/ns/vsso-ext#IsPassengerAirbagOff> a rdfs:Class , owl:Class ;
    rdfs:label "IsPassengerAirbagOff" ;
    rdfs:comment "Is passenger airbag disabled." ;
    rdfs:subClassOf <http://automotive.eurecom.fr/vsso#ObservableSignal> , _:bnode_58f22a2b_9f21_45b9_bf2e_a4e97c330b03_41385336 , _:bnode_58f22a2b_9f21_45b9_bf2e_a4e97c330b03_41385337 .
@@ -10307,7 +10307,7 @@ _:bnode_58f22a2b_9f21_45b9_bf2e_a4e97c330b03_41385337 a owl:Restriction ;
    owl:onProperty <http://www.w3.org/ns/sosa/isObservedBy> ;
    owl:allValuesFrom <http://automotive.eurecom.fr/vsso#AirbagSystem> .
    
-<http://www.bosch.com/ns/vsso-ext#IsDriverSeatBelted> a owl:Class ;
+<http://www.bosch.com/ns/vsso-ext#IsDriverSeatBelted> a rdfs:Class , owl:Class ;
    rdfs:label "IsSeatBeltDriverLatched" ;
    rdfs:comment "Is a seatbelt on a driver side latched." ;
    rdfs:subClassOf <http://automotive.eurecom.fr/vsso#ObservableSignal> , _:bnode_58f22a2b_9f21_45b9_bf2e_a4e97c330b03_41385338 , _:bnode_58f22a2b_9f21_45b9_bf2e_a4e97c330b03_41385339 .
@@ -10318,7 +10318,7 @@ _:bnode_58f22a2b_9f21_45b9_bf2e_a4e97c330b03_41385339 a owl:Restriction ;
    owl:onProperty <http://www.w3.org/ns/sosa/isObservedBy> ;
    owl:allValuesFrom <http://automotive.eurecom.fr/vsso#BeltSensor> .
       
-<http://www.bosch.com/ns/vsso-ext#IsDriverSeatUnbelted> a owl:Class ;
+<http://www.bosch.com/ns/vsso-ext#IsDriverSeatUnbelted> a rdfs:Class , owl:Class ;
    rdfs:label "IsSeatBeltDriverUnlatched" ;
    rdfs:comment "Is a seatbelt on a driver side unlatched." ;
    rdfs:subClassOf <http://automotive.eurecom.fr/vsso#ObservableSignal> , _:bnode_58f22a2b_9f21_45b9_bf2e_a4e97c330b03_41385340 , _:bnode_58f22a2b_9f21_45b9_bf2e_a4e97c330b03_41385341 .
@@ -10329,7 +10329,7 @@ _:bnode_58f22a2b_9f21_45b9_bf2e_a4e97c330b03_41385341 a owl:Restriction ;
    owl:onProperty <http://qudt.org/schema/qudt/unit> ;
    owl:allValuesFrom <http://data.nasa.gov/qudt/owl/unit#Unitless> .
    
-<http://www.bosch.com/ns/vsso-ext#IsPassengerSeatBelted> a owl:Class ;
+<http://www.bosch.com/ns/vsso-ext#IsPassengerSeatBelted> a rdfs:Class , owl:Class ;
    rdfs:label "IsSeatBeltPassengerLatched" ;
    rdfs:comment "Is a seatbelt on a passenger side latched." ;
    rdfs:subClassOf <http://automotive.eurecom.fr/vsso#ObservableSignal> , _:bnode_58f22a2b_9f21_45b9_bf2e_a4e97c330b03_41385342 , _:bnode_58f22a2b_9f21_45b9_bf2e_a4e97c330b03_41385343 .
@@ -10340,7 +10340,7 @@ _:bnode_58f22a2b_9f21_45b9_bf2e_a4e97c330b03_41385343 a owl:Restriction ;
    owl:onProperty <http://www.w3.org/ns/sosa/isObservedBy> ;
    owl:allValuesFrom <http://automotive.eurecom.fr/vsso#BeltSensor> .
    
-<http://www.bosch.com/ns/vsso-ext#IsPassengerSeatUnbelted> a owl:Class ;
+<http://www.bosch.com/ns/vsso-ext#IsPassengerSeatUnbelted> a rdfs:Class , owl:Class ;
    rdfs:label "IsSeatBeltPassengerUnlatched" ;
    rdfs:comment "Is a seatbelt on a passenger side unlatched." ;
    rdfs:subClassOf <http://automotive.eurecom.fr/vsso#ObservableSignal> , _:bnode_58f22a2b_9f21_45b9_bf2e_a4e97c330b03_41385344 , _:bnode_58f22a2b_9f21_45b9_bf2e_a4e97c330b03_41385345 .
@@ -10351,7 +10351,7 @@ _:bnode_58f22a2b_9f21_45b9_bf2e_a4e97c330b03_41385345 a owl:Restriction ;
    owl:onProperty <http://www.w3.org/ns/sosa/isObservedBy> ;
    owl:allValuesFrom <http://automotive.eurecom.fr/vsso#BeltSensor> .
    
-<http://www.bosch.com/ns/vsso-ext#AreDoorsLocked> a owl:Class ;
+<http://www.bosch.com/ns/vsso-ext#AreDoorsLocked> a rdfs:Class , owl:Class ;
    rdfs:label "AreDoorsLocked" ;
    rdfs:comment "Are all doors locked." ;
    rdfs:subClassOf <http://automotive.eurecom.fr/vsso#ObservableSignal> , <http://automotive.eurecom.fr/vsso#ActuableSignal> , _:bnode_58f22a2b_9f21_45b9_bf2e_a4e97c330b03_41385346 , _:bnode_58f22a2b_9f21_45b9_bf2e_a4e97c330b03_41385347 , _:bnode_58f22a2b_9f21_45b9_bf2e_a4e97c330b03_41385348 .
@@ -10365,7 +10365,7 @@ _:bnode_58f22a2b_9f21_45b9_bf2e_a4e97c330b03_41385348 a owl:Restriction ;
    owl:onProperty <http://www.w3.org/ns/sosa/isObservedBy> ;
    owl:allValuesFrom <http://automotive.eurecom.fr/vsso#DoorLock> .
    
-<http://www.bosch.com/ns/vsso-ext#AreDoorsUnlocked> a owl:Class ;
+<http://www.bosch.com/ns/vsso-ext#AreDoorsUnlocked> a rdfs:Class , owl:Class ;
    rdfs:label "AreDoorsUnlocked" ;
    rdfs:comment "Are all doors unlocked." ;
    rdfs:subClassOf <http://automotive.eurecom.fr/vsso#ObservableSignal> , <http://automotive.eurecom.fr/vsso#ActuableSignal> , _:bnode_58f22a2b_9f21_45b9_bf2e_a4e97c330b03_41385349 , _:bnode_58f22a2b_9f21_45b9_bf2e_a4e97c330b03_41385350 , _:bnode_58f22a2b_9f21_45b9_bf2e_a4e97c330b03_41385351 .
@@ -10379,7 +10379,7 @@ _:bnode_58f22a2b_9f21_45b9_bf2e_a4e97c330b03_41385351 a owl:Restriction ;
    owl:onProperty <http://qudt.org/schema/qudt/unit> ;
    owl:allValuesFrom <http://data.nasa.gov/qudt/owl/unit#Unitless> .
    
-<http://www.bosch.com/ns/vsso-ext#DistanceToLeadCar> a owl:Class ;
+<http://www.bosch.com/ns/vsso-ext#DistanceToLeadCar> a rdfs:Class , owl:Class ;
    rdfs:label "DistanceToLeadCar" ;
    rdfs:comment "A distance to a lead vehicle." ;
    rdfs:subClassOf <http://automotive.eurecom.fr/vsso#ObservableSignal> , _:bnode_58f22a2b_9f21_45b9_bf2e_a4e97c330b03_41385352 , _:bnode_58f22a2b_9f21_45b9_bf2e_a4e97c330b03_41385353 .
@@ -10390,7 +10390,7 @@ _:bnode_58f22a2b_9f21_45b9_bf2e_a4e97c330b03_41385353 a owl:Restriction ;
    owl:onProperty <http://qudt.org/schema/qudt/unit> ;
    owl:allValuesFrom <http://data.nasa.gov/qudt/owl/unit#Meter> .
 
-<http://www.bosch.com/ns/vsso-ext#HandsOffSteeringWheelDetectionMode> a owl:Class ;
+<http://www.bosch.com/ns/vsso-ext#HandsOffSteeringWheelDetectionMode> a rdfs:Class , owl:Class ;
    rdfs:label "HandsOffSteeringWheelDetectionMode" ;
    rdfs:comment "Hands-off detection mode (2-Failed 1-Enabled 0-Disabled)" ;
    rdfs:subClassOf <http://automotive.eurecom.fr/vsso#ObservableSignal> , _:bnode_58f22a2b_9f21_45b9_bf2e_a4e97c330b03_41385354 , _:bnode_58f22a2b_9f21_45b9_bf2e_a4e97c330b03_41385355 .
@@ -10401,7 +10401,7 @@ _:bnode_58f22a2b_9f21_45b9_bf2e_a4e97c330b03_41385355 a owl:Restriction ;
    owl:onProperty <http://www.w3.org/ns/sosa/isObservedBy> ;
    owl:allValuesFrom <http://www.bosch.com/ns/vsso-ext#HandsOffDetectionSensor> .
 
-<http://www.bosch.com/ns/vsso-ext#IsDriverDoorOpen> a owl:Class ;
+<http://www.bosch.com/ns/vsso-ext#IsDriverDoorOpen> a rdfs:Class , owl:Class ;
    rdfs:label "IsDriverDoorOpen" ;
    rdfs:comment "Is driver (front left or front right) door open." ;
    rdfs:subClassOf <http://automotive.eurecom.fr/vsso#ObservableSignal> , <http://automotive.eurecom.fr/vsso#ActuableSignal> , _:bnode_58f22a2b_9f21_45b9_bf2e_a4e97c330b03_41385364 , _:bnode_58f22a2b_9f21_45b9_bf2e_a4e97c330b03_41385365 , _:bnode_58f22a2b_9f21_45b9_bf2e_a4e97c330b03_41385366 .
