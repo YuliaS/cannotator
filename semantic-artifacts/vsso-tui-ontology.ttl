@@ -90,7 +90,7 @@ vsso-tui:ActuableSignal a tui:Template;
     tui:ottrTemplate vsso-template:ActuableSignal;
     tui:ottrTemplateInstance "vsso-template:ActuableSignal(ActuableSignalIRI, ActuableSignalName, ActuableSignalDescription, ActuableSignalUnit, ActuableSignalActuator).".
 	
-	vsso-tui:ObservableAndActuableSignalIRI a tui:HiddenParameter ;
+vsso-tui:ObservableAndActuableSignalIRI a tui:HiddenParameter ;
     tui:parameterName "ObservableAndActuableSignalIRI" ;
     tui:parameterIndex "0" ;
     tui:processingDirective [tui:source vsso-tui:ObservableAndActuableSignalName; tui:function func:mintIRI] .
@@ -142,7 +142,7 @@ vsso-tui:ObservableAndActuableSignal a tui:Template;
     tui:ottrTemplate vsso-template:ObservableAndActuableSignal;
     tui:ottrTemplateInstance "vsso-template:ObservableAndActuableSignal(ObservableAndActuableSignalIRI, ObservableAndActuableSignalName, ObservableAndActuableSignalDescription, ObservableAndActuableSignalUnit, ObservableAndActuableSignalSensor, ObservableAndActuableSignalActuator).".
 	
-	vsso-tui:BranchIRI a tui:HiddenParameter ;
+vsso-tui:BranchIRI a tui:HiddenParameter ;
     tui:parameterName "BranchIRI" ;
     tui:parameterIndex "0" ;
     tui:processingDirective [tui:source vsso-tui:BranchName; tui:function func:mintIRI] .
