@@ -1,0 +1,62 @@
+@prefix rdf:                <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs:               <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix qudt:               <http://qudt.org/1.1/schema/qudt#>.
+@prefix sosa:               <http://www.w3.org/ns/sosa/>.
+@prefix vsso:               <http://automotive.eurecom.fr/vsso#>.
+@prefix ottr:               <http://ns.ottr.xyz/0.4/>.
+@prefix o-rdf:              <http://tpl.ottr.xyz/rdf/0.1/>.
+@prefix o-owl-ax:           <http://tpl.ottr.xyz/owl/axiom/0.1/>.
+@prefix vsso-template:      <http://vsso/ext/temp/main/0.1/>.
+@prefix vsso-template-supp: <http://vsso/ext/temp/supplementary/0.1/>.
+@prefix vsso-ext:           <http://www.bosch.com/ns/vsso-ext#>.
+
+vsso-template-supp:LabelComment[owl:Class ?classIRI, rdf:Literal ?label, rdf:Literal ?comment] :: {
+ottr:Triple(?classIRI, rdfs:label, ?label),
+ottr:Triple(?classIRI, rdfs:comment, ?comment)
+}.
+
+vsso-template-supp:ClassSuperClass[owl:Class ?classIRI, rdf:Literal ?label, rdf:Literal ?comment, owl:Class ?superClassIRI] :: {
+vsso-template-supp:LabelComment(?classIRI, ?label, ?comment),
+o-owl-ax:SubClassOf(?classIRI, ?superClassIRI)
+}.
+
+vsso-template:ObservableSignal[owl:Class ?classIRI, rdf:Literal ?label, rdf:Literal ?comment, owl:Class ?unit, owl:Class ?sensor] :: {
+vsso-template-supp:ClassSuperClass(?classIRI, ?label, ?comment, vsso:ObservableSignal),
+o-owl-ax:SubObjectAllValuesFrom(?classIRI, qudt:unit, ?unit),
+o-owl-ax:SubObjectAllValuesFrom(?classIRI, sosa:isObservedBy, ?sensor)
+}.
+
+vsso-template:ActuableSignal[owl:Class ?classIRI, rdf:Literal ?label, rdf:Literal ?comment, owl:Class ?unit, owl:Class ?actuator] :: {
+vsso-template-supp:ClassSuperClass(?classIRI, ?label, ?comment, vsso:ActuableSignal),
+o-owl-ax:SubObjectAllValuesFrom(?classIRI, qudt:unit, ?unit),
+o-owl-ax:SubObjectAllValuesFrom(?classIRI, sosa:isActuatedBy, ?actuator)
+}.
+
+vsso-template:ObservableAndActuableSignal[owl:Class ?classIRI, rdf:Literal ?label, rdf:Literal ?comment, owl:Class ?unit, owl:Class ?sensor, owl:Class ?actuator] :: {
+vsso-template-supp:ClassSuperClass(?classIRI, ?label, ?comment, vsso:ObservableSignal),
+o-owl-ax:SubClassOf(?classIRI, vsso:ActuableSignal),
+o-owl-ax:SubObjectAllValuesFrom(?classIRI, qudt:unit, ?unit),
+o-owl-ax:SubObjectAllValuesFrom(?classIRI, sosa:isObservedBy, ?sensor),
+o-owl-ax:SubObjectAllValuesFrom(?classIRI, sosa:isActuatedBy, ?actuator)
+}.
+
+vsso-template:Branch[owl:Class ?classIRI, rdf:Literal ?label, rdf:Literal ?comment, owl:Class ?branch] :: {
+vsso-template-supp:ClassSuperClass(?classIRI, ?label, ?comment, vsso:Branch),
+o-owl-ax:SubObjectAllValuesFrom(?classIRI, vsso:partOf, ?branch)
+}.
+
+vsso-template:Sensor[owl:Class ?classIRI, rdf:Literal ?label, rdf:Literal ?comment] :: {
+vsso-template-supp:ClassSuperClass(?classIRI, ?label, ?comment, sosa:Sensor)
+}.
+
+vsso-template:Actuator[owl:Class ?classIRI, rdf:Literal ?label, rdf:Literal ?comment] :: {
+vsso-template-supp:ClassSuperClass(?classIRI, ?label, ?comment, sosa:Actuator)
+}.
+
+vsso-template:Instance[ottr:IRI ?entityIRI, owl:Class ?classIRI, rdf:Literal ?originalName, rdf:Literal ?expandedName, rdf:Literal ?fileName, rdf:Literal ?messageName] :: {
+o-rdf:Type(?entityIRI, ?classIRI),
+ottr:Triple(?entityIRI, vsso-ext:originalSignalName, ?originalName),
+ottr:Triple(?entityIRI, vsso-ext:expandedSignalName, ?expandedName),
+ottr:Triple(?entityIRI, vsso-ext:dbcFileName, ?fileName),
+ottr:Triple(?entityIRI, vsso-ext:messageName, ?messageName)
+}.
