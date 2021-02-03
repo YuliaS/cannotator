@@ -12,7 +12,7 @@ Nowadays, cars are equipped with hundreds of sensors that support a variety of f
 
 ### Semantic artifacts
 - OTTR templates
-- TUI ontology
+- VSSO-TUI ontology
 - Extended VSSo
 
 ### Experiment with users
